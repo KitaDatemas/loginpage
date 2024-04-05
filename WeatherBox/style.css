@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 85, 175);
+}
+
+.container{
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 45px;
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 28px 32px;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: rgba(15, 20, 19, 0.829);
+    font-size: 24px;
+    font-weight: 200;
+    width: 300px;
+    padding-left: 50px;
+}
+.search-box input::placeholder{
+    color: gray;
+    font-size: medium;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.search-box i{
+    position: absolute;
+    font-size: 28px;
+}
+
+.search-box button{
+    font-size: 28px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: rgba(150, 177, 177, 0.144);
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    background-color: rgba(150, 177, 177, 0.849);
+}
+
+.Weather-box{
+    text-align: center;
+}
+
+.Weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.Weather-box .Temperature{
+    font-size: 60px;
+}
+/* .Weather-box .Decription{
+    padding-bottom: 30px;
+} */
+
+.Weather-detail{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Weather-detail .Huminity{
+    display: flex;
+    justify-content: flex-start;
+}
+.Weather-detail i{
+    font-size: 35px;
+    padding-top: 7px;
+}
+.Weather-detail span{
+    font-size: 19px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.Weather-detail p{
+    font-size: 19px;
+    padding-top: 10px;
+    padding-left: 1px;
+}
+.Weather-detail .Wind{
+    display: flex;
+    justify-content: flex-end;
+}
+.expand{
+    animation: 0.5s expand forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes expand {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
