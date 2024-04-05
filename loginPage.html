@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel = "stylesheet" href="styleLoginPage.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="selection">
+            <div id="signIn" class="enable">
+                <h4>Sign in</h4>
+            </div>
+            <div id="signUp" class="disable">
+                <h4>Sign up</h4>
+            </div>
+        </div>
+        <form class="signInTab">
+            <h2>Sign in</h2>
+            <div class="username">
+                <h4>Username <i class="ri-user-line"></i></h4>
+                <input placeholder="Username" onkeydown="search(this)">
+            </div>
+            <div class="Password">
+                <h4>Password</h4>
+                <input placeholder="Please enter your password" onkeydown="search(this)">
+            </div>
+            <h5>Don't have account? Please signing up</h5>
+        </form>
+        <form class="signUpTab">
+            <h2>Sign up</h2>
+            <div class="email">
+                <i class="ri-mail-line"></i>
+                <input type="email" placeholder="Email" onkeydown="search(this)">
+            </div>
+            <div class="username">
+                <h4>Username</h4>
+                <input placeholder="Username" onkeydown="search(this)">
+            </div>
+            <div class="Password">
+                <h4>Password</h4>
+                <input placeholder="Input your password" onkeydown="search(this)">
+            </div>
+            <div class="Confirm_password">
+                <h4>Confirm password</h4>
+                <input placeholder="Confirm your password" onkeydown="search(this)">
+            </div>
+        </form>
+    </div>
+    <script src="loginjs.js"></script>
+</body>
+</html>
